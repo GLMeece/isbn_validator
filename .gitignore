@@ -4,3 +4,5 @@ src/isbn_validator.egg-info/*
 docs/_build
 MANIFEST
 *.html
+src/isbn_validator/aleph
+src/isbn_validator/decoders/aleph
