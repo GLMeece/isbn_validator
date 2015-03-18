@@ -1,0 +1,6 @@
+*.pyc
+dist/*
+src/isbn_validator.egg-info/*
+docs/_build
+MANIFEST
+*.html
