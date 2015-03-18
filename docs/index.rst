@@ -47,7 +47,7 @@ Source code
 This project is released as opensource (GPL) and source codes can be found at
 GitHub:
 
-- https://github.com/edeposit/edeposit.amqp.ltp
+- https://github.com/edeposit/isbn_validator
 
 Installation
 ++++++++++++
