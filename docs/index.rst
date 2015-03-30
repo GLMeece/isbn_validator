@@ -44,7 +44,7 @@ API
 
 Source code
 -----------
-This project is released as opensource (GPL) and source codes can be found at
+This project is released as opensource (MIT) and source codes can be found at
 GitHub:
 
 - https://github.com/edeposit/isbn_validator
