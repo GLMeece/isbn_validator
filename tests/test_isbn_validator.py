@@ -13,7 +13,6 @@ def test_clean_isbn():
     assert iv._clean_isbn("asdfg80-86-0-56-31-7asd") == [8,0,8,6,0,5,6,3,1,7]
     assert iv._clean_isbn("a80-86-0-56-31-7asdx") == [8,0,8,6,0,5,6,3,1,7,10]
     assert iv._clean_isbn("X") == [10]
-    assert iv._clean_isbn(u"X") == [10]
 
 
 def test_get_isbn10_checksum():

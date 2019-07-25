@@ -25,14 +25,14 @@ def _clean_isbn(isbn):
     Returns:
         list: array of numbers (if "x" is found, it is converted to 10).
     """
-    if isinstance(isbn, basestring):
+    if isinstance(isbn, str):
         isbn = list(isbn.lower())
 
         # filter digits and "x"
-        isbn = filter(lambda x: x.isdigit() or x == "x", isbn)
+        isbn = [x for x in isbn if x.isdigit() or x == "x"]
 
     # convert ISBN to numbers
-    return map(lambda x: 10 if x == "x" else int(x), isbn)
+    return [10 if x == "x" else int(x) for x in isbn]
 
 
 def _isbn_cleaner(fn):
@@ -97,7 +97,7 @@ def get_isbn13_checksum(isbn):
     Returns:
         int: Last checksum digit for given `isbn`.
     """
-    multipliers = map(lambda x: int(x), list("13" * 6))
+    multipliers = [int(x) for x in list("13" * 6)]
 
     rest = sum([i * x for i, x in zip(multipliers, isbn)]) % 10
 
