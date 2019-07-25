@@ -2,17 +2,13 @@
 # -*- coding: utf-8 -*-
 
 def allSame(s):
-    return not filter(lambda x: x != s[0], s)
+    return not [x for x in s if x != s[0]]
 
 
 def hasDigit(s):
-    return any(map(lambda x: x.isdigit(), s))
+    return any([x.isdigit() for x in s])
 
 
 def getVersion(data):
     data = data.splitlines()
-    return filter(
-        lambda (x, y):
-            len(x) == len(y) and allSame(y) and hasDigit(x) and "." in x,
-        zip(data, data[1:])
-    )[0][0]
+    return [x_y for x_y in zip(data, data[1:]) if len(x_y[0]) == len(x_y[1]) and allSame(x_y[1]) and hasDigit(x_y[0]) and "." in x_y[0]][0][0]

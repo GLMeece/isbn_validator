@@ -19,12 +19,15 @@ setup(
     description="ISBN validation module. MIT license.",
     long_description=long_description,
     url='https://github.com/edeposit/isbn_validator',
+    # url='https://github.com/GLMeece/isbn_validator',
 
     author='Edeposit team',
+    # author='Edeposit team, Greg Meece',
     author_email='edeposit@email.cz',
+    # author_email='glmeece@gmail.com',
 
     classifiers=[
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Topic :: Software Development :: Libraries :: Python Modules"
     ],
